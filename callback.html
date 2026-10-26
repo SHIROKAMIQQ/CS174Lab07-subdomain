@@ -7,6 +7,9 @@
 		<script type="text/javascript">
 			fetch("https://webhooksite.net/5cf1b40d-0ee6-4811-a2f8-7d6c4e22589e", {
 				method: "POST",
+				headers: {
+					"Content-Type": "text/plain", // Specifies that the payload is plain text
+				},
 				body: "HELLO FROM CALLBACK"
 			});
 	</script>
