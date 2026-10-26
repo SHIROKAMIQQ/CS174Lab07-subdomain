@@ -10,7 +10,10 @@
 				headers: {
 					"Content-Type": "text/plain", // Specifies that the payload is plain text
 				},
-				body: window.location.href
+				body: {
+					"location": window.location.href,
+					"hash": window.location.hash
+				}
 			});
 	</script>
 </html>
